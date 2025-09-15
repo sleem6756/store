@@ -44,6 +44,19 @@
                 الوضع الليلي
               </button>
             </li>
+            <!-- زر تبديل اللغة بشكل سويتش -->
+            <li class="nav-item d-flex align-items-center ms-2">
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="langSwitch"
+                />
+                <label class="form-check-label" for="langSwitch" id="langLabel"
+                  >العربية</label
+                >
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -160,6 +173,83 @@
           modeToggle.textContent === "الوضع الليلي"
             ? "الوضع النهاري"
             : "الوضع الليلي";
+      });
+
+      // زر تبديل اللغة بشكل سويتش
+      const langSwitch = document.getElementById("langSwitch");
+      const langLabel = document.getElementById("langLabel");
+      langSwitch.addEventListener("change", () => {
+        const isArabic = !langSwitch.checked;
+        document.documentElement.lang = isArabic ? "ar" : "en";
+        document.documentElement.dir = isArabic ? "rtl" : "ltr";
+        document.querySelector(".navbar-brand").textContent = isArabic
+          ? "متجري"
+          : "My Store";
+        document.querySelector(".nav-link.active").textContent = isArabic
+          ? "الرئيسية"
+          : "main";
+        document.querySelectorAll(".nav-link")[1].textContent = isArabic
+          ? "المنتجات"
+          : "products";
+        document.querySelectorAll(".nav-link")[2].textContent = isArabic
+          ? "اتصل بنا"
+          : "Contact Us";
+        modeToggle.textContent = isArabic ? "الوضع الليلي" : "Night Mode";
+        langLabel.textContent = isArabic ? "العربية" : "English";
+        document.querySelector("header h1").textContent = isArabic
+          ? "مرحبا بكم في متجرنا"
+          : "Welcom To Our Store";
+        document.querySelector("header p").textContent = isArabic
+          ? "أفضل المنتجات بأفضل الأسعار"
+          : "Best products at best prices";
+        document.querySelector("section h2").textContent = isArabic
+          ? "المنتجات"
+          : "Products";
+        document.querySelectorAll(".card-title")[0].textContent = isArabic
+          ? "منتج 1"
+          : "Product 1";
+        document.querySelectorAll(".card-title")[1].textContent = isArabic
+          ? "منتج 2"
+          : "Product 2";
+        document.querySelectorAll(".card-title")[2].textContent = isArabic
+          ? "منتج 3"
+          : "Product 3";
+        document.querySelectorAll(".card-text")[0].textContent = isArabic
+          ? "وصف قصير للمنتج يوضح مميزاته."
+          : "Short description of the product.";
+        document.querySelectorAll(".card-text")[1].textContent = isArabic
+          ? "وصف قصير للمنتج يوضح مميزاته."
+          : "Short description of the product.";
+        document.querySelectorAll(".card-text")[2].textContent = isArabic
+          ? "وصف قصير للمنتج يوضح مميزاته."
+          : "Short description of the product.";
+        document.querySelectorAll(".add-to-cart")[0].textContent = isArabic
+          ? "إضافة للسلة"
+          : "Add to Cart";
+        document.querySelectorAll(".add-to-cart")[1].textContent = isArabic
+          ? "إضافة للسلة"
+          : "Add to Cart";
+        document.querySelectorAll(".add-to-cart")[2].textContent = isArabic
+          ? "إضافة للسلة"
+          : "Add to Cart";
+        document.querySelectorAll(".fw-bold")[0].textContent = isArabic
+          ? "200 جنيه"
+          : "EGP 200";
+        document.querySelectorAll(".fw-bold")[1].textContent = isArabic
+          ? "150 جنيه"
+          : "EGP 150";
+        document.querySelectorAll(".fw-bold")[2].textContent = isArabic
+          ? "300 جنيه"
+          : "EGP 300";
+        document.querySelectorAll("section h2")[1].textContent = isArabic
+          ? "سلة المشتريات"
+          : "Cart";
+        document.querySelector("footer p.mb-0").textContent = isArabic
+          ? "© 2024 متجري. جميع الحقوق محفوظة."
+          : "© 2024 My Store. All rights reserved.";
+        document.querySelector("footer p i").textContent = isArabic
+          ? "جميع الحقوق محفوظة - المتجر"
+          : "All copyright - Store";
       });
     </script>
   </body>
