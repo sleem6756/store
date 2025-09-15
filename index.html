@@ -1,191 +1,195 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>متجر إلكتروني</title>
-    <!-- Bootstrap CSS -->
-    <style>
-      .card img {
-        width: 100%;
-        height: 250px;
-      }
-    </style>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- شريط التنقل -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">My Store</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto" id="nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">main</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">products</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <!-- زر تبديل الوضع الليلي -->
-            <li class="nav-item">
-              <button id="modeToggle" class="btn btn-outline-light ms-3">
-                الوضع الليلي
-              </button>
-            </li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>متجر إلكتروني</title>
+  <!-- Bootstrap CSS -->
+  <style>
+    .card img {
+      width: 100%;
+      height: 250px;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- شريط التنقل -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" id="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">main</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <!-- زر تبديل الوضع الليلي -->
+          <li class="nav-item">
+            <button id="modeToggle" class="btn btn-outline-light ms-3">
+              الوضع الليلي
+            </button>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- البانر -->
-    <header class="bg-primary text-white text-center py-5">
-      <h1>Welcom To Our Store</h1>
-      <p>أفضل المنتجات بأفضل الأسعار</p>
-    </header>
+  <!-- البانر -->
+  <header class="bg-primary text-white text-center py-5">
+    <h1>Welcom To Our Store</h1>
+    <p>أفضل المنتجات بأفضل الأسعار</p>
+  </header>
 
-    <!-- المنتجات -->
-    <section class="container py-5">
-      <h2 class="text-center mb-4">المنتجات</h2>
-      <div class="row g-4">
-        <!-- بطاقة منتج -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img
-              src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg"
-              class="card-img-top"
-              alt="منتج"
-            />
-            <!--  2رشدى مر من هنا -->
-            <div class="card-body text-center">
-              <h5 class="card-title">منتج 1</h5>
-              <p class="card-text">وصف قصير للمنتج يوضح مميزاته.</p>
-              <p class="fw-bold">200 جنيه</p>
-              <button class="btn btn-primary add-to-cart">إضافة للسلة</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- بطاقة منتج -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img src="./assets/Athletic.jpg" class="card-img-top" alt="منتج" />
-            <div class="card-body text-center">
-              <h5 class="card-title">منتج 2</h5>
-              <p class="card-text">وصف قصير للمنتج يوضح مميزاته.</p>
-              <p class="fw-bold">150 جنيه</p>
-              <button class="btn btn-primary add-to-cart">إضافة للسلة</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- بطاقة منتج -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img
-              src="./assets/Swim-Shorts.jpg"
-              class="card-img-top"
-              alt="منتج"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">منتج 3</h5>
-              <p class="card-text">وصف قصير للمنتج يوضح مميزاته.</p>
-              <p class="fw-bold">300 جنيه</p>
-              <button class="btn btn-primary add-to-cart">إضافة للسلة</button>
-            </div>
+  <!-- المنتجات -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">المنتجات</h2>
+    <div class="row g-4">
+      <!-- بطاقة منتج -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <img src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg"
+            class="card-img-top" alt="منتج" />
+          <!--  2رشدى مر من هنا -->
+          <div class="card-body text-center">
+            <h5 class="card-title">منتج 1</h5>
+            <p class="card-text">وصف قصير للمنتج يوضح مميزاته.</p>
+            <p class="fw-bold">200 جنيه</p>
+            <button class="btn btn-primary add-to-cart">إضافة للسلة</button>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- السلة -->
-    <section class="container py-5">
-      <h2 class="text-center mb-4">سلة المشتريات</h2>
-      <ul class="list-group" id="cart"></ul>
-    </section>
+      <!-- بطاقة منتج -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg/500px-Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg" class="card-img-top" alt="منتج" />
+          <div class="card-body text-center">
+            <h5 class="card-title">منتج 2</h5>
+            <p class="card-text">وصف قصير للمنتج يوضح مميزاته.</p>
+            <p class="fw-bold">150 جنيه</p>
+            <button class="btn btn-primary add-to-cart">إضافة للسلة</button>
+          </div>
+        </div>
+      </div>
 
-    <!-- الفوتر -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p class="mb-0">&copy; 2024 My Store. All rights reserved.</p>
-      <p>
-        © 2025
-        <i class="fa fa-copyright" aria-hidden="true">All copyright - Store</i>
-      </p>
-    </footer>
+      <!-- بطاقة منتج -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100">
+          <img src="./assets/Swim-Shorts.jpg" class="card-img-top" alt="منتج" />
+          <div class="card-body text-center">
+            <h5 class="card-title">منتج 3</h5>
+            <p class="card-text">وصف قصير للمنتج يوضح مميزاته.</p>
+            <p class="fw-bold">300 جنيه</p>
+            <button class="btn btn-primary add-to-cart">إضافة للسلة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- السلة -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">سلة المشتريات</h2>
+    <ul class="list-group" id="cart"></ul>
+  </section>
 
-    <!-- JavaScript -->
-    <script>
-      const cart = document.getElementById("cart");
-      const buttons = document.querySelectorAll(".add-to-cart");
+  <!-- الفوتر -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2024 My Store. All rights reserved.</p>
+    <p>
+      © 2025
+      <i class="fa fa-copyright" aria-hidden="true">All copyright - Store</i>
+    </p>
+  </footer>
 
-      buttons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const product =
-            btn.parentElement.querySelector(".card-title").textContent;
-          const price = btn.parentElement.querySelector(".fw-bold").textContent;
-          const li = document.createElement("li");
-          li.className = "list-group-item";
-          li.textContent = `${product} - ${price}`;
-          cart.appendChild(li);
-        });
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript -->
+  <script>
+    const cart = document.getElementById("cart");
+    const buttons = document.querySelectorAll(".add-to-cart");
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const product =
+          btn.parentElement.querySelector(".card-title").textContent;
+        const price = btn.parentElement.querySelector(".fw-bold").textContent;
+        const li = document.createElement("li");
+        li.className = "list-group-item";
+        li.textContent = `${product} - ${price}`;
+        cart.appendChild(li);
       });
+    });
 
-    </script>
+  </script>
 
-    <script>
-      let li =document.createElement("li")
-      let anch =document.createElement("a")
-      anch.href="#"
-
-
-      anch.textContent="product 4 - 400 EGP"
-      li.className="nav-item"
-      anch.className="nav-link"
-      li.appendChild(anch)
-      document.getElementById("nav").appendChild(li)
-    </script>
-    <script>
-      let li2 =document.createElement("li")
-      let anch2 =document.createElement("a")
-      anch2.href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+  <script>
+    let li = document.createElement("li")
+    let anch = document.createElement("a")
+    anch.href = "#"
 
 
-      anch2.textContent="رونالدو عمك"
-      li2.className="nav-item"
-      anch2.className="nav-link"
-      li2.appendChild(anch2)
-      document.getElementById("nav").appendChild(li2)
-      // وضع تبديل الوضع الليلي
-      const modeToggle = document.getElementById("modeToggle");
-      const navbar = document.querySelector(".navbar");
-      modeToggle.addEventListener("click", () => {
-        document.body.classList.toggle("bg-dark");
-        document.body.classList.toggle("text-white");
-        navbar.classList.toggle("navbar-dark");
-        navbar.classList.toggle("navbar-light");
-        navbar.classList.toggle("bg-dark");
-        navbar.classList.toggle("bg-light");
-        modeToggle.classList.toggle("btn-outline-light");
-        modeToggle.classList.toggle("btn-outline-dark");
-        modeToggle.textContent =
-          modeToggle.textContent === "الوضع الليلي"
-            ? "الوضع النهاري"
-            : "الوضع الليلي";
-      });
-    </script>
-  </body>
+    anch.textContent = "product 4 - 400 EGP"
+    li.className = "nav-item"
+    anch.className = "nav-link"
+    li.appendChild(anch)
+    document.getElementById("nav").appendChild(li)
+  </script>
+  <script>
+    let li2 = document.createElement("li")
+    let anch2 = document.createElement("a")
+    anch2.href = "https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+
+
+    anch2.textContent = "رونالدو عمك"
+    anch2.style.color = "gold"
+    li2.className = "nav-item"
+    anch2.className = "nav-link"
+    li2.appendChild(anch2)
+    document.getElementById("nav").appendChild(li2)
+    // وضع تبديل الوضع الليلي
+    const modeToggle = document.getElementById("modeToggle");
+    const navbar = document.querySelector(".navbar");
+    modeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("bg-dark");
+      document.body.classList.toggle("text-white");
+      navbar.classList.toggle("navbar-dark");
+      navbar.classList.toggle("navbar-light");
+      navbar.classList.toggle("bg-dark");
+      navbar.classList.toggle("bg-light");
+      modeToggle.classList.toggle("btn-outline-light");
+      modeToggle.classList.toggle("btn-outline-dark");
+      modeToggle.textContent =
+        modeToggle.textContent === "الوضع الليلي"
+          ? "الوضع النهاري"
+          : "الوضع الليلي";
+    });
+  </script>
+
+
+  <script>
+    let li3 = document.createElement("li")
+    let btn = document.createElement("button")
+    btn.textContent = "Roshdy"
+
+    li3.className = "nav-item"
+    btn.className = "btn btn-outline-light ms-3"
+    li3.appendChild(btn)
+    document.getElementById("nav").appendChild(li3)
+    btn.addEventListener("click", () => {
+      alert("Hello from Roshdy");
+    });
+  </script>
+</body>
+
 </html>
