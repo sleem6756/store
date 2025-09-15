@@ -38,6 +38,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
             </li>
+            <!-- زر تبديل الوضع الليلي -->
+            <li class="nav-item">
+              <button id="modeToggle" class="btn btn-outline-light ms-3">
+                الوضع الليلي
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -58,7 +64,6 @@
           <div class="card h-100">
             <img
               src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg"
-              
               class="card-img-top"
               alt="منتج"
             />
@@ -113,7 +118,10 @@
     <!-- الفوتر -->
     <footer class="bg-dark text-white text-center py-3">
       <p class="mb-0">&copy; 2024 My Store. All rights reserved.</p>
-      <p>© 2025 <i class="fa fa-copyright" aria-hidden="true">All copyright - Store</i></p>
+      <p>
+        © 2025
+        <i class="fa fa-copyright" aria-hidden="true">All copyright - Store</i>
+      </p>
     </footer>
 
     <!-- Bootstrap JS -->
@@ -161,6 +169,23 @@
       anch2.className="nav-link"
       li2.appendChild(anch2)
       document.getElementById("nav").appendChild(li2)
+      // وضع تبديل الوضع الليلي
+      const modeToggle = document.getElementById("modeToggle");
+      const navbar = document.querySelector(".navbar");
+      modeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("bg-dark");
+        document.body.classList.toggle("text-white");
+        navbar.classList.toggle("navbar-dark");
+        navbar.classList.toggle("navbar-light");
+        navbar.classList.toggle("bg-dark");
+        navbar.classList.toggle("bg-light");
+        modeToggle.classList.toggle("btn-outline-light");
+        modeToggle.classList.toggle("btn-outline-dark");
+        modeToggle.textContent =
+          modeToggle.textContent === "الوضع الليلي"
+            ? "الوضع النهاري"
+            : "الوضع الليلي";
+      });
     </script>
   </body>
 </html>
