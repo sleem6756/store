@@ -30,7 +30,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto" id="nav">
             <li class="nav-item">
               <a class="nav-link active" href="#">main</a>
             </li>
@@ -135,6 +135,32 @@
           cart.appendChild(li);
         });
       });
+
+    </script>
+
+    <script>
+      let li =document.createElement("li")
+      let anch =document.createElement("a")
+      anch.href="#"
+
+
+      anch.textContent="product 4 - 400 EGP"
+      li.className="nav-item"
+      anch.className="nav-link"
+      li.appendChild(anch)
+      document.getElementById("nav").appendChild(li)
+    </script>
+    <script>
+      let li2 =document.createElement("li")
+      let anch2 =document.createElement("a")
+      anch2.href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+
+
+      anch2.textContent="رونالدو عمك"
+      li2.className="nav-item"
+      anch2.className="nav-link"
+      li2.appendChild(anch2)
+      document.getElementById("nav").appendChild(li2)
     </script>
   </body>
 </html>
